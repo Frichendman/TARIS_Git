@@ -7,6 +7,7 @@ HOST = '127.0.0.1'
 PORT = 2000
 
 
+
 def main():
     sock = socket.socket()
     sock.connect((HOST, PORT))
@@ -37,6 +38,7 @@ def main():
     print(result)
 
     sock.close()
+
 
 
 if __name__ == "__main__":

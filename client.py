@@ -28,7 +28,7 @@ def main():
     sock.connect((HOST, PORT))
     crypter = FileCrypter(private_key)
 
-    msg = input("Ввести сообщение: ")
+    msg = input("Ввести сообщениеtt: ")
     result = crypter.encryption(msg)
     print(result)
     sock.send(pickle.dumps(result))
